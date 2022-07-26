@@ -14,9 +14,9 @@ function ResumeClose(){
 
 // this is project container
 function ProjectOpen(){
-    document.getElementById("project").style.display = "flex";
+    document.getElementById("project").style.top = "flex";
     document.getElementById("project").style.zIndex= "2";
-    document.body.style.zIndex = "-1";
+    document.body.style.top = "1000px";
 }
 function ProjectClose(){
     document.getElementById("project").style.display = "none";

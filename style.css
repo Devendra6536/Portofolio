@@ -455,6 +455,12 @@ hr {
     margin: 20px auto;
     /* border: 2px solid purple; */
 }
+.left{
+    width: 400px;
+}
+.right{
+    width: 600px;
+}
 
 .Lbox, .Rbox{
     /* border: 2px solid purple; */
