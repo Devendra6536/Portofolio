@@ -1,6 +1,7 @@
 * {
     font-family: "Ubuntu", sans-serif;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 /* body{ */
