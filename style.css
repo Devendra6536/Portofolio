@@ -3,9 +3,9 @@
     margin: 0px;
 }
 
-body{
+/* body{ */
     /* background-color: rgb(146, 143, 143); */
-}
+/* } */
 .head{
     background: url('wave.png') center center/cover;
     height: 800px; 
