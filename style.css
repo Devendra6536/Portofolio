@@ -4,9 +4,6 @@
     scroll-behavior: smooth;
 }
 
-/* body{ */
-    /* background-color: rgb(146, 143, 143); */
-/* } */
 .head{
     background: url('wave.png') center center/cover;
     height: 800px; 
@@ -290,7 +287,7 @@ hr {
         top: 100px;
         left: 20px; */
         display: block;
-        background-position: 414px 481px;
+        background-position: 436px 512px;
         width: 350px;
         height: 350px;
         border: 2px solid purple;
