@@ -81,7 +81,7 @@
     /* background: url("https://instagram.fdel3-3.fna.fbcdn.net/v/t51.2885…ZP3fTjNWYHL7cBzj_R6htg&oe=629F0A5E&_nc_sid=30a2ef"); */
     /* background: url('https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-6/256344454_911374776473645_8085055723466121913_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZVOIB8EOEdgAX_9VuTQ&_nc_ht=scontent.fdel3-2.fna&oh=00_AT-Ls2HBxOVtaAIMGxqC0cXjL3RJtKbh9XRR_CglWAW5eA&oe=62B62250'); */
     /* background: url("avatar.svg"); */
-    background: url("https://scontent-del1-1.xx.fbcdn.net/v/t39.30808-6/311443451_1127900641487723_4487408385351969921_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=TKI-4pFPeygAX_QyWFF&_nc_ht=scontent-del1-1.xx&oh=00_AT97ApdEiu-FKLzfCfrN0IY9J-lstyl4R4mLOU8SyFtS8w&oe=635213B7");
+    background: url("https://avatars.githubusercontent.com/u/88203724?v=4s");
     
     background-position: 498px 576px;
     width: 500px;
@@ -511,4 +511,24 @@ hr {
         flex-direction: column;
     }
     
+}
+
+.bubble{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    bottom: 2800px;
+    left: 80px;
+}
+.bubble_box{
+    display: flex;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
 }
