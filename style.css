@@ -6,6 +6,7 @@
 
 .head{
     background: url('wave.png') center center/cover;
+   
     height: 800px; 
 }
 .name {
@@ -172,6 +173,7 @@ hr {
 
 
 .footer {
+    background-color: rgba(25, 24, 27, 0.147);
     height: 230px;
     width: 1500px;
     margin: auto;
@@ -251,7 +253,10 @@ hr {
     }
 
 @media screen and (max-width:600px) {
-
+    #clock{
+        font-weight: 900;
+        font-size: 10px;
+    }
     .name{
         width: 400px;
     }
@@ -486,6 +491,7 @@ hr {
 
 
 @media screen and (max-width:600px) {
+   
     body{
         background: none;
     }
@@ -519,7 +525,7 @@ hr {
     position: relative;
     width: 400px;
     height: 400px;
-    bottom: 2500px;
+    bottom: 2800px;
     left: 80px;
 }
 .bubble div:nth-child(2n+0){
@@ -539,7 +545,7 @@ hr {
     align-items: center;
     justify-content: center;
     animation-name: bubble;
-    animation-duration:2s;
+    animation-duration:5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
@@ -548,27 +554,19 @@ hr {
         0%   {
             height: 100px;
             width: 25px;
-            left:0px; 
-            top:0px;
-        }
-        25%   {
-            height: 25px;
-            width: 250px;
-            left:200px; 
-            top:0px;
-        }
-        75%   {
-            height: 100px;
-            width: 25px;
-            left:200px; 
-            top:200px;
-        }
-        75%   {
-            height: 25px;
-            width: 250px;
-            left:0px; 
-            top:200px;
-        }
-       
+        }       
       
+}
+
+
+#clock{
+    font-weight: 900;
+    margin-right: 400px;
+    font-size: 25px;
+}
+#clock span{
+    background-color: rgba(64, 68, 59, 0.088);
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;
 }

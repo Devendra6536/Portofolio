@@ -17,6 +17,7 @@
 <body>
     <div class="head">
         <div class="navbar">
+            <p id="clock">Current Time is <span id="hours">:</span>:<span id="min"></span>:<span id="seconds"></span></p>
             <li><a href="https://mycredible.info/#8696230033" target="_blank ">Resume</a></li>|
             <li><a href="https://newstime45.herokuapp.com/" target="_blank">Project</a></li>|
             <li><a href="https://www.linkedin.com/in/devendrapal8682/" target="_blank">Contact</a></li>
@@ -276,23 +277,22 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-         
-    <div class="bubble">
-            <div class="bubble_box">Hlo</div>
-            <div class="bubble_box">Hlo</div>                 
-            <div class="bubble_box">Hlo</div>                   
-        </div>
-    
-
     <script src="index.js"></script>
+    <script>
+        
+        setInterval(clock,1000);
+
+        function clock(){
+            let time  = new Date();
+            let  hours = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("min").innerHTML = min;
+            document.getElementById("seconds").innerHTML = sec;
+        }
+    </script>
 
 </body>
 
