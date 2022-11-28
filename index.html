@@ -17,7 +17,8 @@
 <body>
     <div class="head">
         <div class="navbar">
-            <p id="clock">Current Time is <span id="hours">:</span>:<span id="min"></span>:<span id="seconds"></span></p>
+            <p id="clock">Current Time is <span id="hours">:</span>:<span id="min"></span>:<span id="seconds"></span>
+            </p>
             <li><a href="https://mycredible.info/#8696230033" target="_blank ">Resume</a></li>|
             <li><a href="https://newstime45.herokuapp.com/" target="_blank">Project</a></li>|
             <li><a href="https://www.linkedin.com/in/devendrapal8682/" target="_blank">Contact</a></li>
@@ -45,51 +46,84 @@
             <div class="dp">
             </div>
             <div class="container">
-                <div class="box" id="box1"><p>Resume</p></div>
-                <a href="#projectid" style="color: black;"><div class="box" id="box2">
-                    <p>Project</p></div></a>
-                <a href="#contactid" style="color: black;"> <div class="box" id="box3" >
-                    <p>Contact</p>
-                </div></a>
+                <div class="box" id="box1">
+                    <p>Resume</p>
+                </div>
+                <a href="#projectid" style="color: black;">
+                    <div class="box" id="box2">
+                        <p>Project</p>
+                    </div>
+                </a>
+                <a href="#contactid" style="color: black;">
+                    <div class="box" id="box3">
+                        <p>Contact</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <br><br><br><br><br><br>
 
     <div class="projects" id="projectid">
+        <h1 style="color: white;">Projects</h1>
         <div class="project1">
             <img src="dance.jpg" alt="">
-            <div class="content">This is a Smart Academy Dancing website.
-
-                HTML, CSS and JAVASCRIPT are used forfrontend.
-
-                Node JS and MongoDB are used to handle the backend
-
-                This Website forthe dance Academy where user can see the details of our Academy or can enroll themselves
-                and can get all information related to our academy
-                <a href="https://dk-dance-academy.herokuapp.com/"><button class="open">Open Project</button></a>
+            <div class="content">
+                <p>This is a Smart Academy Dancing website. It is for manage the academy
+                    . Here all the Information of the academy is available like class timings, fee str. and other
+                    different kind of
+                    dance. Here at the contact page a form is given where we collect the minimal information
+                    of the user for the future reference so that we can do suggest for better opportunities</p>
+<br>
+                <h2>Tech Stack</h2><br>
+                <p><b>HTML</b>, <b>CSS</b> and <b>JAVASCRIPT</b> are used forfrontend.</p>
+                <p> <b>NodeJS</b> and <b>MongoDB</b> are used to handle the backend</p><br>
+                    <a href="https://dk-dance-academy.herokuapp.com/"><button class="open">Open Project</button></a>
             </div>
         </div>
+
         <div class="project1">
-            <div class="content">The front end Structure is made in the HTML , CSS and JAVASCRIPT.The backend is made in
+            <div class="content">
+                <p>The front end Structure is made in the HTML , CSS and JAVASCRIPT.The backend is made in
                 PHP where CURL api is used.The curl API fetch the data form the various sources like ABP, AAJ tak, BBC.
 
                 All the news are displayed categories wise on the web pages.On this website the user can read the News
-                Headlines of categories wise like Cricket, Technology, Science and Health.
+                Headlines of categories wise like Cricket, Technology, Science and Health.</p><br>
+                <h2>Tech Stack</h2><br>
+                <p><b>HTML</b>, <b>CSS</b> and <b>JAVASCRIPT</b> are used forfrontend.</p>
+                    <p> <b>PHP</b> and <b>MySQL</b> are used to handle the backend.</p><br>
                 <a href="https://newstime45.herokuapp.com/"><button class="open">Open Project</button></a>
             </div>
             <img src="newsTime45.jpg" alt="">
         </div>
+
         <div class="project1">
             <img src="music.jpg" alt="">
-            <div class="content">A online music player based on the simple embded approach.
-
-                Its front end is made in HTML and CSS and logic build in the JAVASCRIPT
+            <div class="content">
+                <p> A online music player based on the simple embded approach. Here All the Basic functionalities
+                     of a Mp3Player like previous, next, Play, Pause music button, progress bar, time is available.
+                    Its front end is made in HTML and CSS and logic build in the JAVASCRIPT</p><br>
+                    <h2>Tech Stack</h2><br>
+                <p><b>HTML</b>, <b>CSS</b> and <b>JAVASCRIPT</b> are used forfrontend.</p>
+                    <p> <b>PHP</b> and <b>MySQL</b> are used to handle the backend.</p><br>
                 <a href="https://devendra6536.github.io/Mp3Player/"><button class="open">Open Project</button></a>
             </div>
         </div>
+
+        <div class="report">
+            <h1>Salse Analysis report for ABC Consulting Pvt Limited</h1>
+            <br>
+            <br>
+            <div class="report_container"><iframe class="visual" title="Salse Details"
+                    src="https://app.powerbi.com/reportEmbed?reportId=523820f4-df52-4370-aa4f-db468c86fdcd&autoAuth=true&ctid=7889a9b8-497c-46b6-b57b-c54d7366ef1d"
+                    frameborder="0" allowFullScreen="true"></iframe></div>
+        </div>
     </div>
-    
+
+
+
+
+
     <hr style="margin-top:250px ;">
     <div class="footer" id="contactid">
         <div class="category">
@@ -277,14 +311,16 @@
         </div>
     </div>
 
+
+
     <script src="index.js"></script>
     <script>
-        
-        setInterval(clock,1000);
 
-        function clock(){
-            let time  = new Date();
-            let  hours = time.getHours();
+        setInterval(clock, 1000);
+
+        function clock() {
+            let time = new Date();
+            let hours = time.getHours();
             let min = time.getMinutes();
             let sec = time.getSeconds();
 

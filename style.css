@@ -2,7 +2,7 @@
     font-family: "Ubuntu", sans-serif;
     margin: 0px;
     scroll-behavior: smooth;
-}
+}  
 
 .head{
     background: url('wave.png') center center/cover;
@@ -77,13 +77,8 @@
     /* border: 2px solid red; */
 }
 .dp {
-    /* background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fdevendra-pal-79ab441a5&psig=AOvVaw01tJ3SVlcQsM8e5dJXN8SA&ust=1654077815289000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLiG-J2-ifgCFQAAAAAdAAAAABAD") center center; */
-    /* background: url("https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-6/270818149_934874414123681_2752427128259892863_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=JskkOCjo8lAAX8CuYqG&_nc_ht=scontent.fdel3-2.fna&oh=00_AT_nGMmvVzrfGRLHo_3GDQY5eGez1Whrp1GpIrd3xLUZdw&oe=629AB14F"); */
-    /* background: url("https://instagram.fdel3-3.fna.fbcdn.net/v/t51.2885…ZP3fTjNWYHL7cBzj_R6htg&oe=629F0A5E&_nc_sid=30a2ef"); */
-    /* background: url('https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-6/256344454_911374776473645_8085055723466121913_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZVOIB8EOEdgAX_9VuTQ&_nc_ht=scontent.fdel3-2.fna&oh=00_AT-Ls2HBxOVtaAIMGxqC0cXjL3RJtKbh9XRR_CglWAW5eA&oe=62B62250'); */
-    /* background: url("avatar.svg"); */
-    background: url("https://avatars.githubusercontent.com/u/88203724?v=4s");
     
+    background: url("https://avatars.githubusercontent.com/u/88203724?v=4s");    
     background-position: 498px 498px;
     width: 500px;
     height: 500px;
@@ -105,7 +100,6 @@
     left: 881px;
     }
     .description p{
-        /* letter-spacing: 1px; */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -215,14 +209,21 @@ hr {
     .projects{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
     }
     
     .project1{
-        height: 460px;
-        width:1400px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80%;
         padding: 50px 50px;
+        margin: 50px auto;
         display: flex;
         flex-direction: row;
+        border: 2px solid blue;
+        border-radius: 10px;
+        background: linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+
     }
     .project1 img{
         width: 550px;
@@ -232,7 +233,6 @@ hr {
         border: 2px solid purple;
     }
     .content{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0px 50px;
         display: flex;
         flex-direction: column;
@@ -241,6 +241,11 @@ hr {
         width: 500px;
         height: 400px;
     }
+    .content p{
+        font-size: 20px;        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
     .content a .open{
         margin: 25px 0px;
         padding: 10px 15px;
@@ -250,6 +255,27 @@ hr {
         color: white;
         text-transform: capitalize;
         letter-spacing: 1px;
+        transition: 0.70s;
+        -webkit-transition: 0.70s;
+        -moz-transition: 0.70s;
+        -ms-transition: 0.70s;
+        -o-transition: 0.70s;
+        
+    }
+    .content a .open:hover{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: 0.90s;
+        -moz-transition: 0.90s;
+        -webkit-transition: 0.90s;
+        -ms-transition: 0.90s;
+        -o-transition: 0.90s;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 
 @media screen and (max-width:600px) {
@@ -500,7 +526,7 @@ hr {
     }
     .project1{
         display: block;
-        width: 391px;
+        width: 375px;
         margin: 50px 0px;
         height: 100%;
     }
@@ -516,7 +542,20 @@ hr {
         margin: 20px 0px;
         flex-direction: column;
     }
-    
+    .report{
+        width: 375px;
+        margin: 50px 0px;
+        height: 100%;
+    }
+    .report_container{
+        width: 375px;
+        
+    }
+    .visual{
+        width: 347px;
+        height:541px;
+    }
+
 }
 
 .bubble{
@@ -550,13 +589,6 @@ hr {
     animation-direction: alternate;
 
 }
-@keyframes bubble {
-        0%   {
-            height: 100px;
-            width: 25px;
-        }       
-      
-}
 
 
 #clock{
@@ -569,4 +601,19 @@ hr {
     border-radius: 10px;
     padding: 5px;
     border: 2px solid black;
+}
+.report{
+    height: 600px;
+    width: 80%;
+    padding: 50px 50px;
+    margin: 50px auto;
+    border: 2px solid blue;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+.visual{
+    width: 1000px;
+    height:541px;
 }
