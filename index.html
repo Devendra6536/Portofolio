@@ -353,12 +353,32 @@
             let min = time.getMinutes();
             let sec = time.getSeconds();
 
+            // hours
             if(hours > 12){
                 hours = hours-12;
             }
+            if(hours < 10){
+                document.getElementById("hours").innerHTML = "0"+hours;
+            }
+            else{
             document.getElementById("hours").innerHTML = hours;
-            document.getElementById("min").innerHTML = min;
+            }
+
+            // min
+            if(min < 10){
+                document.getElementById("min").innerHTML = "0"+min;
+            }
+            else{
+                document.getElementById("min").innerHTML = min;
+            }
+            
+            // seconds;
+            if(sec <10){
+                document.getElementById("seconds").innerHTML = "0"+sec;
+            }
+            else{
             document.getElementById("seconds").innerHTML = sec;
+            }
         }
     </script>
 
