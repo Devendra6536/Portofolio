@@ -489,7 +489,7 @@ hr {
     }
     .content{
         width: 391px;
-        height: 400px;
+        height: 500px;
         margin: 20px 0px;
         flex-direction: column;
     }
