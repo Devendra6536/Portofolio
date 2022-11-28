@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flip.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <title>Portofolio</title>
     <style>
 
@@ -17,7 +19,7 @@
 <body>
     <div class="head">
         <div class="navbar">
-            <p id="clock">Current Time is <span id="hours">:</span>:<span id="min"></span>:<span id="seconds"></span>
+            <p id="clock"><span id="hours">:</span>:<span id="min"></span>:<span id="seconds"></span>
             </p>
             <li><a href="https://mycredible.info/#8696230033" target="_blank ">Resume</a></li>|
             <li><a href="https://newstime45.herokuapp.com/" target="_blank">Project</a></li>|
@@ -43,8 +45,35 @@
                 </p>
             </div>
 
-            <div class="dp">
+            
+            
+        <div class=" card middle">
+            <div class="front">
+                <img src="https://avatars.githubusercontent.com/u/88203724?v=4s" alt="">
             </div>
+            <div class="back">
+                <div class="back-content middle">
+                    <h2>Software Developer</h2>
+                    <span>Designer &amp; Developers Blog</span>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
             <div class="container">
                 <div class="box" id="box1">
                     <p>Resume</p>
@@ -324,6 +353,9 @@
             let min = time.getMinutes();
             let sec = time.getSeconds();
 
+            if(hours > 12){
+                hours = hours-12;
+            }
             document.getElementById("hours").innerHTML = hours;
             document.getElementById("min").innerHTML = min;
             document.getElementById("seconds").innerHTML = sec;
