@@ -118,21 +118,11 @@
     margin: 36px 10px;
 }
 
-#box1:hover {
+#box1:hover, #box2:hover, #box3:hover {
     background-color: white;
 }
-
-#box2:hover {
-    background-color: white;
-}
-
-#box3:hover {
-    background-color: white;
-}
-
 hr {
     width: 1900px;
-    display: inline-block;
     margin-top: 30px;
     margin-bottom: -20px;
     height: 2px;
@@ -141,7 +131,6 @@ hr {
 
 
 .footer {
-    background-color: rgba(25, 24, 27, 0.147);
     height: 230px;
     width: 1500px;
     margin: auto;
@@ -153,7 +142,6 @@ hr {
 .category {
     display: inline-block;
     width: 230px;
-    /* border: 2px solid purple; */
     margin: 10px 70px;
 }
 .profiles ul {
