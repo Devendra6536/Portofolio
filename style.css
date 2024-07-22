@@ -131,7 +131,7 @@
 }
 
 hr {
-    width: 1508px;
+    width: 1900px;
     display: inline-block;
     margin-top: 30px;
     margin-bottom: -20px;
@@ -277,13 +277,11 @@ hr {
         
         display: flex;
         float: right;
-        margin-top: 29px;
-        margin-right: -70px;
+        margin-top:112px;
         position: absolute;
-        left: 80px;
+        left: 30px;
 
     }
-
     .dp {
         
         display: block;
@@ -342,7 +340,7 @@ hr {
     }
 
     hr {
-        width: 200px;
+        width: 520px;
         height: 2px;
         display: inline-block;
         margin-top: 146px;
@@ -410,6 +408,9 @@ hr {
     font-size: 25px;
     text-decoration: none;
     text-align: center;
+}
+.visual{
+    width:432px;
 }
 .fa{
     color: black;
