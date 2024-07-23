@@ -132,12 +132,18 @@ hr {
 
 
 .footer {
-    height: 230px;
-    width: 1500px;
+    height: 100%;
+    width: 100%;
     margin: auto;
     box-sizing: border-box;
-    margin-top: 20px;
     display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.footer>div{
+    padding: 15px;
+    color: white;
 }
 
 .category {
@@ -170,10 +176,12 @@ hr {
         font-size: 60px;
     }
     .projects{
+        margin: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         background: linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+
     }
     
     .project1{
@@ -563,4 +571,7 @@ hr {
 .open{
     height: 42px;
     width: 196px;
+}
+.category p a{
+    text-decoration: none;
 }
